@@ -72,7 +72,7 @@ class SerialPortServer:
             for connection in self.connections:
                 try:
                     connection.send(lenword + payload)
-                except socket.error, e:
+                except socket.error as e:
                     sys.stderr.write("Connection error: %s\n" % e)
                     connection.close()
                     to_remove.append(connection)
@@ -108,7 +108,7 @@ class SerialPortServer:
             payload = connection.recv(msg_len)
             checksum = sum(map(ord, payload)) & 255
             self.serial.write("\xFF\xFF\xFE" + chr(checksum) + lenword + payload)
-        except Exception, e:
+        except Exception as e:
             sys.stderr.write("Invalid packet from network: %s\n" % e)
             connection.close()
             self.connections.remove(connection)

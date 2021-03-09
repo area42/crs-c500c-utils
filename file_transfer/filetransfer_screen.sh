@@ -9,18 +9,19 @@
 #
 # Files will be dumped in the current directory on CROS side.
 
+CRS_CON=crs_con 
 TMP=`tempfile`
 for var in "$@"
 do
     echo uudecode > $TMP
     uuencode $var $var >> $TMP 
-    screen -X readreg p $TMP
+    screen -r $CRS_CON -X readreg p $TMP
     sleep 1
-    screen -X stuff ^M
+    screen -r $CRS_CON -X stuff ^M
     sleep 1
-    screen -X paste p
+    screen -r $CRS_CON -X paste p
     sleep 1
-    screen -X stuff ^M
+    screen -r $CRS_CON -X stuff ^M
     sleep 1
 done
 

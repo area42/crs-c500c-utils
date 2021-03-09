@@ -1,0 +1,168 @@
+[0.217s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/mwessling/ws_ros2/src/crs-c500c-utils']
+[0.217s] DEBUG:colcon:Parsed command line arguments: Namespace(base_paths=['/home/mwessling/ws_ros2/src/crs-c500c-utils'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7fef2f449f10>>, metas=['./colcon.meta'], names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7fef2f449f10>, verb_name='list', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fef2f2e6e50>)
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.264s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mwessling/ws_ros2/src/crs-c500c-utils'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'ros'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'python'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extensions ['python_setup_py']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/cros_system_bin) by extension 'python_setup_py'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package '/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_moveit_config' with type 'ros.catkin' and name 'crs_f3_moveit_config'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package '/home/mwessling/ws_ros2/src/crs-c500c-utils/crs_f3_robot_interface' with type 'ros.catkin' and name 'crs_f3_robot_interface'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'ros'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['cmake', 'python']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'cmake'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'python'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extensions ['python_setup_py']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/doc) by extension 'python_setup_py'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'ros'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/file_transfer) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/log) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/log) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/log) ignored
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package '/home/mwessling/ws_ros2/src/crs-c500c-utils/rosserial_cros' with type 'ros.catkin' and name 'rosserial_cros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/serial_port_server) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'ros'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['cmake', 'python']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'cmake'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/simple_message) by extension 'python_setup_py'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'ros'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['cmake', 'python']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'cmake'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'python'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extensions ['python_setup_py']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/syntax_hilight) by extension 'python_setup_py'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'ros'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/tests) by extension 'python_setup_py'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(/home/mwessling/ws_ros2/src/crs-c500c-utils/trajectory) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
