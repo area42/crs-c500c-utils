@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find crs_f3_robot_description)/urdf/common_materials.xacro"/>
+
+  <xacro:macro name="crs_f3" params="prefix">
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/base_link.stl" />
+        </geometry>
+        <xacro:material_crs_pedestal />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/base_link.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 -0.087" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 -0.175" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_1.stl" />
+        </geometry>
+        <xacro:material_crs_ral_pure_white />
+      </visual>
+      <collision>
+        <origin xyz="0 0 -0.175" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_1.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${-0.1/2} ${-0.350/2}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="-0.1 -0.1 -0.350" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_2.stl" />
+        </geometry>
+        <xacro:material_crs_ral_pure_white />
+      </visual>
+      <collision>
+        <origin xyz="-0.1 -0.1 -0.350" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_2.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${-0.1/2} ${-0.615/2}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="-0.1 -0.1 -0.615" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_3.stl" />
+        </geometry>
+        <xacro:material_crs_ral_pure_white />
+      </visual>
+      <collision>
+        <origin xyz="-0.1 -0.1 -0.615" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_3.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${0} ${-0.660/2}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="-0.1 0 -0.660" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_4.stl" />
+        </geometry>
+        <xacro:material_crs_ral_pure_white />
+      </visual>
+      <collision>
+        <origin xyz="-0.1 0 -0.660" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_4.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${0} ${-0.885/2}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="-0.1 0 -0.885" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_5.stl" />
+        </geometry>
+        <xacro:material_crs_ral_pure_white />
+      </visual>
+      <collision>
+        <origin xyz="-0.1 0 -0.885" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_5.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${0} ${-0.960/2}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="-0.1 0 -0.960" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_6.stl" />
+        </geometry>
+        <xacro:material_crs_pedestal />
+      </visual>
+      <collision>
+        <origin xyz="-0.1 0 -0.960" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_6.stl" />
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${-0.1/2} ${0} ${-0.960}" rpy="0 0 0"/>
+        <mass value="1"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+    <!-- This frame corresponds to the $FLANGE coordinate system in crs KRC controllers. -->
+    <link name="${prefix}tool0" />
+
+    <joint name="${prefix}joint_a1" type="revolute">
+      <origin xyz="0 0 0.175" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(240)}"/>
+    </joint>
+    <joint name="${prefix}joint_a2" type="revolute">
+      <origin xyz="0.1 0.1 0.175" rpy="0 0 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${radians(-45)}" upper="${radians(135)}" effort="0" velocity="${radians(210)}"/>
+    </joint>
+    <joint name="${prefix}joint_a3" type="revolute">
+      <origin xyz="0 0 0.265" rpy="0 0 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${radians(-135)}" upper="${radians(135)}" effort="0" velocity="${radians(240)}"/>
+    </joint>
+    <joint name="${prefix}joint_a4" type="revolute">
+      <origin xyz="0 -0.1 0.045" rpy="0 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0" velocity="${radians(375)}"/>
+    </joint>
+    <joint name="${prefix}joint_a5" type="revolute">
+      <origin xyz="0 0 0.225" rpy="0 0 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${radians(-135)}" upper="${radians(135)}" effort="0" velocity="${radians(300)}"/>
+    </joint>
+    <joint name="${prefix}joint_a6" type="revolute">
+      <origin xyz="0 0 0.075" rpy="0 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="${radians(-350)}" upper="${radians(350)}" effort="0" velocity="${radians(375)}"/>
+    </joint>
+    <joint name="${prefix}joint_a6-tool0" type="fixed">
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}tool0"/>
+      <origin xyz="0 0 0" rpy="0 ${radians(90)} 0"/>
+    </joint>
+
+    <!-- ROS base_link to crs $ROBROOT coordinate system transform -->
+    <link name="world" />
+    <joint name="fixed" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="world"/>
+      <child link="${prefix}base_link"/>
+    </joint>
+  </xacro:macro>
+</robot>
