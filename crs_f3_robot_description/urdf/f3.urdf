@@ -28,8 +28,8 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="0 0 -0.087"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.078"/>
+      <mass value="0.165"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -50,14 +50,14 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 -0.05 -0.175"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="-0.014 -0.016 -0.133"/>
+      <mass value="0.496"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
   <link name="link_2">
     <visual>
-      <origin rpy="0 0 0" xyz="-0.1 -0.1 -0.350"/>
+      <origin rpy="0 0 0" xyz="-0.1 -0.1 -0.350  "/>
       <geometry>
         <mesh filename="package://crs_f3_robot_description/meshes/f3/visual/link_2.stl"/>
       </geometry>
@@ -72,8 +72,8 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 -0.05 -0.3075"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0.140"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -88,14 +88,14 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="-0.1 -0.1 -0.615"/>
+      <origin rpy="0 0 0" xyz="0 0.106 0.034"/>
       <geometry>
         <mesh filename="package://crs_f3_robot_description/meshes/f3/collision/link_3.stl"/>
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 0 -0.33"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.112"/>
+      <mass value="0.105"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -116,8 +116,8 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 0 -0.4425"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.112"/>
+      <mass value="0.105"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -138,8 +138,8 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 0 -0.48"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.017"/>
+      <mass value="0.011"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -160,8 +160,8 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="-0.05 0 -0.96"/>
-      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0.1 0 0.88"/>
+      <mass value="0.006"/>
       <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
     </inertial>
   </link>
@@ -171,42 +171,42 @@
     <origin rpy="0 0 0" xyz="0 0 0.175"/>
     <parent link="base_link"/>
     <child link="link_1"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="4.1887902047863905"/>
   </joint>
   <joint name="joint_a2" type="revolute">
     <origin rpy="0 0 0" xyz="0.1 0.1 0.175"/>
     <parent link="link_1"/>
     <child link="link_2"/>
-    <axis xyz="0 1 0"/>
-    <limit effort="0" lower="-0.7853981633974483" upper="2.356194490192345" velocity="3.6651914291880923"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="0" lower="-2.356194490192345" upper="0.7853981633974483" velocity="3.6651914291880923"/>
   </joint>
   <joint name="joint_a3" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.265"/>
     <parent link="link_2"/>
     <child link="link_3"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="0 -1 0"/>
     <limit effort="0" lower="-2.356194490192345" upper="2.356194490192345" velocity="4.1887902047863905"/>
   </joint>
   <joint name="joint_a4" type="revolute">
     <origin rpy="0 0 0" xyz="0 -0.1 0.045"/>
     <parent link="link_3"/>
     <child link="link_4"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0" lower="-3.141592653589793" upper="3.141592653589793" velocity="6.544984694978735"/>
   </joint>
   <joint name="joint_a5" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.225"/>
     <parent link="link_4"/>
     <child link="link_5"/>
-    <axis xyz="0 1 0"/>
+    <axis xyz="0 -1 0"/>
     <limit effort="0" lower="-2.356194490192345" upper="2.356194490192345" velocity="5.235987755982989"/>
   </joint>
   <joint name="joint_a6" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0.075"/>
     <parent link="link_5"/>
     <child link="link_6"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
     <limit effort="0" lower="-6.1086523819801535" upper="6.1086523819801535" velocity="6.544984694978735"/>
   </joint>
   <joint name="joint_a6-tool0" type="fixed">
@@ -214,6 +214,69 @@
     <child link="tool0"/>
     <origin rpy="0 1.5707963267948966 0" xyz="0 0 0"/>
   </joint>
+  <transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a4">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="tran6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_a6">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor6">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="control"/>
+  </gazebo>
   <!-- ROS base_link to crs $ROBROOT coordinate system transform -->
   <link name="world"/>
   <joint name="fixed" type="fixed">
