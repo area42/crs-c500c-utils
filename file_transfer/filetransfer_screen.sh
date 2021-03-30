@@ -9,7 +9,7 @@
 #
 # Files will be dumped in the current directory on CROS side.
 
-CRS_CON=crs_con 
+CRS_CON=ttyS0 
 TMP=`tempfile`
 for var in "$@"
 do

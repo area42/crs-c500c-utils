@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: crs_f3_robot_description
+    relative_path: urdf/f3.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/crs_f3.srdf
+  CONFIG:
+    author_name: Mike Wessling
+    author_email: mwessling@gmail.com
+    generated_timestamp: 1617134073

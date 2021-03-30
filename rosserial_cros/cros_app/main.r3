@@ -9,14 +9,31 @@ main
     int topic_id
     int[2] prevtime
     int[2] nowtime
+    int[2] rostime
+    int[2] starttime
     ploc robot_pos
     float[8] joint_angles
     float deg_to_rad 
     deg_to_rad = 3.1415926535 / 180.0
-    
+
+    printf("ROS Server starting\n")
+
     mtime(&prevtime)
-    
-    open(g_rosserial_fd, "/dev/sio0", O_RDWR | O_NONBLOCK, 0)
+
+    open(g_rosserial_fd, "/dev/sio1", O_RDWR | O_NONBLOCK, 0)
+
+    sio_ioctl_conf serial_conf
+    ioctl(g_rosserial_fd, IOCTL_GETC, &serial_conf)
+    serial_conf.baud = 115200
+    serial_conf.OutxCtsFlow = 1
+    serial_conf.OutxDsrFlow = 1
+    serial_conf.DtrControl = 1
+    serial_conf.DsrSensitivity = 1
+    serial_conf.OutX = 0
+    serial_conf.InX = 0
+    serial_conf.RtsControl = 1
+    serial_conf.fifotrig = 2
+    ioctl(g_rosserial_fd, IOCTL_PUTC, &serial_conf)
     
     while 1==1
         rosserial_readwrite()
@@ -25,7 +42,7 @@ main
         
         if msg_len == 0 and topic_id == 0 then
             ;; Request for topic list
-            printf("Sending topic list\n")
+            ;;printf("Sending topic list\n")
             rosserial_publish(TOPICID_TEST, "/test", "std_msgs/String", "992ce8a1687cec8c8bd883ec73ca41d1")
             rosserial_publish(TOPICID_JOINTSTATE, "/joint_states", "sensor_msgs/JointState", "3066dcd76a6cfaef579bd0f34173e9fd")
         elseif msg_len > 0 then
@@ -37,9 +54,23 @@ main
         rosserial_end_read_packet(msg_len)
         
         mtime(&nowtime)
-        
-        if nowtime[0] > prevtime[0] + 250 then
-            printf("Sending test message\n")
+
+
+    
+        if time() == rostime[0] then 
+            if prevtime[0] <= nowtime[0] then
+                rostime[1] = rostime[1] + (nowtime[0] - prevtime[0]) * 1000
+            else ;; rolled over. 
+                rostime[1] = rostime[1] + ( 0xFFFFFFFF - prevtime[0] + nowtime[0] ) * 1000
+            end if
+        else
+            rostime[1] = 0
+        end if
+        rostime[0] = time()
+
+
+;;        if nowtime[0] > prevtime[0] + 50 or prevtime[1] < nowtime[1] then
+            ;; printf("Sending test message\n")
             offset = rosserial_start_packet(TOPICID_TEST)
             offset = rosmsg_write_string(g_rosserial_txfifo, offset, "Testing!")
             rosserial_end_packet(offset)
@@ -48,8 +79,11 @@ main
             here(robot_pos)
             motor_to_joint(robot_pos, joint_angles)
             
+
             offset = rosserial_start_packet(TOPICID_JOINTSTATE)
-            offset = rosmsg_write_header(g_rosserial_txfifo, offset, 0, nowtime, "")
+            
+
+            offset = rosmsg_write_header(g_rosserial_txfifo, offset, 0,rostime, "")
             
             ;; array of joint names
             offset = rosmsg_write_int32(g_rosserial_txfifo, offset, 6)
@@ -78,6 +112,6 @@ main
             rosserial_end_packet(offset)
             
             mtime(&prevtime)
-        end if
+;;      end if
     end while
 end main
