@@ -159,4 +159,18 @@ sub rosserial_publish(int topic_id, string[] topic_name, string[] message_type, 
     rosserial_end_packet(offset)
 end sub
 
+;; Send TopicInfo reply for publishing a topic
+sub rosserial_subscribe(int topic_id, string[] topic_name, string[] message_type, string[] md5sum)
+    int offset
+    offset = rosserial_start_packet(TOPICID_SUBSCRIBE)
+    offset = rosmsg_write_uint16(g_rosserial_txfifo, offset, topic_id)
+    offset = rosmsg_write_string(g_rosserial_txfifo, offset, topic_name)
+    offset = rosmsg_write_string(g_rosserial_txfifo, offset, message_type)
+    offset = rosmsg_write_string(g_rosserial_txfifo, offset, md5sum)
+    offset = rosmsg_write_int32(g_rosserial_txfifo, offset, ROSSERIAL_MAXPACKETLEN)
+    rosserial_end_packet(offset)
+end sub
+
+
+
 .endif
